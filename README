@@ -1,0 +1,27 @@
+
+## Running the Application
+
+1. Ensure you have set the `GOOGLE_API_KEY` environment variable
+2. Build the project:
+   ```bash
+   ./gradlew build
+   ```
+3. Run the application:
+   ```bash
+   GOOGLE_API_KEY=<YOUR_API_KEY> ./gradlew run
+   ```
+
+## Getting a Google API Key
+
+To obtain a Google API key for Gemini:
+
+1. Go to the [Google AI Studio](https://makersuite.google.com/app/apikey)
+2. Create or sign in to your Google Cloud account
+3. Create a new API key
+4. Copy the API key and set it as your environment variable as shown above
+
+## Security Notes
+
+- Keep your API key secure and never share it
+- Consider using a `.env` file for local development (remember to add it to `.gitignore`)
+- For production environments, use secure secret management systems
